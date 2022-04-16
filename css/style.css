@@ -1,12 +1,17 @@
-html{
+html {
     box-sizing: border-box;
 }
 
-*, ::after, ::before{
+*,
+::after,
+::before {
     box-sizing: inherit;
 }
 
-body{
-    font-family: "Montserrat", sans-serif
-    
+body {
+    font-family: "Montserrat", "sans-serif";
+    background-image: url("../images/currency-image.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+
 }
