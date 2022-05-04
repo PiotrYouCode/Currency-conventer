@@ -32,8 +32,7 @@
                         <span class="form__labelText">
                             Kwota w PLN:
                         </span>
-                        <input class="form__field  js-amount" required type="number" min="1" step="any"
-                    name="amount">
+                        <input class="form__field  js-amount" required type="number" min="1" step="any" name="amount">
                     </label>
                 </p>
                 <p>
@@ -42,21 +41,21 @@
                             Waluta:
                         </span>
                         <select class="form__field js-currency" required name="currency">
-                        <option value="">Wybierz walute</option>
-                        <option value="EUR">Euro</option>
-                        <option value="USD">Dolar Amerykański</option>
-                    </select>
+                            <option value="EMPTY"></option>
+                            <option value="EUR">Euro</option>
+                            <option value="USD">Dolar Amerykański</option>
+                        </select>
                     </label>
                 </p>
                 <p>
                     <label>
-                    <span class="form__labelText">
-                        Aktualny kurs:
-                    </span>
-                    <input class="form__field js-exchange" name="exchange" disabled>
+                        <span class="form__labelText">
+                            Aktualny kurs:
+                        </span>
+                        <input class="form__field js-exchange" name="exchange" disabled>
 
-                </label>
-            </p>
+                    </label>
+                </p>
             </fieldset>
             <p>
                 <button class="form__button">Przelicz</button>

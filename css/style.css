@@ -13,5 +13,5 @@ body {
     background-image: url("../images/currency-image.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
-
+    background-size: cover;
 }
