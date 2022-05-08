@@ -1,6 +1,5 @@
 {
-     const chooseCurrency = () => {
-
+    const chooseCurrency = () => {
         const currencyElement = document.querySelector(".js-currency");
         const exchangeElement = document.querySelector(".js-exchange");
         const eurRate = 4.894;
@@ -30,23 +29,28 @@
 
         resultElement.innerText = `${result.toFixed(2)} ${currency}`
     };
+   
+        const init = () => {
 
-    const init = () => {
+            const currencyElement = document.querySelector(".js-currency");
+            const formElement = document.querySelector(".js-form");
 
-        const currencyElement = document.querySelector(".js-currency");
-        const formElement = document.querySelector(".js-form");
+            currencyElement.addEventListener("input", chooseCurrency);
+            formElement.addEventListener("submit", calculateAmount);
 
-        currencyElement.addEventListener("input", chooseCurrency);
-        formElement.addEventListener("submit", calculateAmount);
+        };
 
+
+        init();
     };
-  
 
-    init();
-};
-
-const resetResult = () => {
-    formElement.addEventListener("reset", () => {
-        resultElement.innerText = "N/A";
-    });
-}
+    const resetResult = () => {
+        const resultElement = document.querySelector(".js-result");
+        const formElement = document.querySelector(".js-form");
+    
+       formElement.addEventListener("reset",resetResult);
+            resultElement.innerText = `N/A`;
+        };
+        resetResult();
+    
+    

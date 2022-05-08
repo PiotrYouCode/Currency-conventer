@@ -3,4 +3,6 @@
     margin:0 auto;
     padding: 50px 10px;
     background-color: rgb(255, 253, 249);
+    padding:10px;
+    border-radius: 5px;
 }
